@@ -30,7 +30,8 @@ When managing multiple factories, customers, styles, and hundreds of active orde
 - **❌ Error-prone**
 - **❌ Non-transparent**
 - **❌ Difficult to escalate delays**
-<br>Without real-time stage visibility, delays are discovered too late — affecting shipment timelines, customer satisfaction, and revenue.
+<br>
+Without real-time stage visibility, delays are discovered too late — affecting shipment timelines, customer satisfaction, and revenue.
 
 ---
 
@@ -44,40 +45,124 @@ It enables:<br>
 - **📈 Order quantity insights**
 - **🔎 Drill-through order-level monitoring**
 
-### 2. **Logistics Tracking**
-- Integrated **shipment milestones**: ETD, Vessel, Offload, In-house  
-- Built **turnaround monitoring** for Customs, GRN, and Dox handling  
-- Visualized **days delayed vs. standard lead time**  
-- Created **connected view** between commercial commitments and logistics execution  
+### 2. **Core Concept**
+1. CBD Publish  
+2. Fabric MR  
+3. HK Trims MR 
+4. Fabric/Trims MR
+5. Local Trims PO
+6. ASL Trims PI
+7. ASL Trims/Fabric PI
+8. Direct Supplier PI Info
+9. ASL Trims PI Info
+10. ASL Trims/Fabric PI Info
+11. Local Trims/Fabric SC/LC
+12. LC/SC
+13. GRN
+<br>
+The dashboard dynamically categorizes:<br>
+
+- **✅ On Track**
+- **🔴 Delayed**
+- **📦 In Progress**
+- **✔️ Completed**
+
+
+## 💡 Dashboard Features
+**1️⃣ Executive Summary View**
+- **Total Orders**
+- **Order Quantity**
+- **Factory FOB**
+- **In-Progress Count**
+- **On-Track vs Delay Risk**
+- **Stage-wise Completion Metrics**<br>
+Includes alert system:<br>
+
+**⚠️ “38% of active orders show delay risk. Close monitoring required.”**
+
+**2️⃣ In-Progress Status Analysis**
+<br>
+Visual breakdown:
+- **On Track vs Delayed per milestone**
+- **Quick bottleneck identification**
+- **Stage-wise performance comparison**
+
+**3️⃣ Factory Delay View**
+<br>
+Helps answer:
+- **Which factory has highest delay?**
+- **Which stage is causing bottleneck?**
+- **Where escalation is needed?**
+
+**4️⃣ Order-Level Drill Tracker**
+<br>
+Searchable grid by:
+- **File Number**
+- **Style**
+- **Customer**
+- **Factory**
+
+Visual indicators:
+<br>
+- **✔️ Completed**
+- **⭕ Pending**
+---
+
+## 🏗️ Technical Architecture<br>
+**Data Layer**
+- Power Query (M Language)
+- Data transformation & milestone extraction
+- Factory indexing logic
+- Status flag calculation
+
+**Model Layer**
+- Power BI dashboard
+- Interactive slicers
+- On-time vs Risk classification
+
+**Visualization Layer**
+- Stage-based status measures
+- Delay logic
+- Cross-filtering enabled
+- Drill-through enabled
 
 ---
 
-## 💡 Business Impact
-- ✅ **End-to-end visibility** from PI issuance to goods in-house  
-- ✅ **Faster risk detection** across both commercial & logistics operations  
-- ✅ Improved **decision-making with evidence-based insights**  
-- ✅ Enhanced **collaboration** between commercial and logistics teams  
-- ✅ Stronger **accountability and workflow monitoring**  
+## 💡 Why This Project Is Powerful
+Even though it’s a small model, it delivers:
+- 🔍 Production transparency
+- 📉 Risk prediction
+- 🏭 Factory performance benchmarking
+- 📦 Order lifecycle visibility
+- ⚡ Faster management decisions
 
----
-
-## 🛠️ Tech Stack
-- **Power BI**: Data modeling, DAX measures, Power Query  
-- **Excel / SharePoint**: Data sources  
-- **Custom HTML in DAX**: Enhanced visuals & formatted insights  
-
----
-
-## 📅 Status
-- ✅ Outsource Commercial Dashboard (Exception + Logistics) – Completed  
-- 🔄 In-house Commercial Dashboard – In development  
-
+It converts raw operational data into actionable insights.
 ---
 
 ## 📂 Repository Structure
 - `README.md` – Project documentation  
 - `preview.png` – Dashboard screenshot  
 - `.pbix` – Portfolio Power BI file (dummy data)  
+
+---
+
+## 🎯 Ideal Use Cases
+- Garment manufacturing
+- Footwear production
+- FMCG batch tracking
+- Multi-stage production environments
+- Supply chain monitoring
+- Vendor performance tracking
+
+## 🏁 Conclusion
+
+Manufacturing visibility should not depend on Excel follow-ups and WhatsApp updates.
+
+This dashboard demonstrates how structured milestone tracking + simple logic + strong visualization can transform production monitoring.
+
+- Small in size.
+- Powerful in insight.
+- Built for operational clarity.
 
 ---
 
