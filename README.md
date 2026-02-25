@@ -29,17 +29,20 @@ When managing multiple factories, customers, styles, and hundreds of active orde
 - **❌ Time-consuming**
 - **❌ Error-prone**
 - **❌ Non-transparent**
-- **❌ Difficult to escalate delays**<br>
-Without real-time stage visibility, delays are discovered too late — affecting shipment timelines, customer satisfaction, and revenue.
+- **❌ Difficult to escalate delays**
+<br>Without real-time stage visibility, delays are discovered too late — affecting shipment timelines, customer satisfaction, and revenue.
 
 ---
 
-## 🚀 Solution Delivered
-### 1. **Commercial Exception Monitoring**
-- On Track / Delay KPIs for PI, LC, Clearance, and Payments  
-- Delay categorization (1–3 days, 4–6 days, 7–9 days, >10 days)  
-- Root cause analysis from remarks columns  
-- Exception summaries with interactive drill-down  
+## 🚀 Solution Overview
+The **In-Season Order Tracking Dashboard** provides end-to-end visibility of production stages across factories and customers.
+<br>
+It enables:<br>
+- **📊 Real-time stage tracking**
+- **⚠️ Early delay identification**
+- **🏢 Factory-wise delay analysis**
+- **📈 Order quantity insights**
+- **🔎 Drill-through order-level monitoring**
 
 ### 2. **Logistics Tracking**
 - Integrated **shipment milestones**: ETD, Vessel, Offload, In-house  
